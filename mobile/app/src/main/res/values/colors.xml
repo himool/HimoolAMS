@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorMain">#0091FF</color>
+    <color name="tablehead">#D9EFFF</color>
+    <color name="mytab3">#FF6666</color>
+    <color name="color_blue">#3AA7FF</color>
+    <color name="transparent">#00000000</color>
+    <color name="color_text_gray">#767676</color>
+    <color name="c6d">#DDDDDD</color>
+    <color name="cffffff">#ffffff</color>
+    <color name="cdef">#B0B0B0</color>
+    <color name="c69">#999999</color>
+    <color name="c66">#666666</color>
+    <color name="c63">#333333</color>
+    <color name="c64">#444444</color>
+    <color name="c60">#000000</color>
+    <color name="black">#090808</color>
+    <color name="haf">#60000000</color>
+    <!--黑色 -->
+</resources>

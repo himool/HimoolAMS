@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <paths>
+        <root-path
+            name="camera_photos"
+            path="" />
+        // Context#getExternalFilesDir(String) or Context.getExternalFilesDir(null).
+        <external-files-path
+            name="project_root"
+            path="files" />
+        // Environment.getExternalStorageDirectory().
+        <external-path
+            name="external_storage_root"
+            path="." />
+    </paths>
+</resources>

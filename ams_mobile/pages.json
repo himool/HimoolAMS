@@ -1,0 +1,39 @@
+{
+  "pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+    {
+      "path": "pages/home/index",
+      "style": {
+        "navigationBarTitleText": "首页",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/login/index",
+      "style": {
+        "navigationBarTitleText": "登录",
+        "enablePullDownRefresh": false,
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/stockCheckForm/index",
+      "style": {
+        "navigationBarTitleText": "盘点",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/stockCheckDetial/index",
+      "style": {
+        "navigationBarTitleText": "盘点详情",
+        "enablePullDownRefresh": false
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "海鸥云WMS",
+    "navigationBarBackgroundColor": "#3c9cff",
+    "backgroundColor": "#F8F8F8"
+  }
+}

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar_title_commit" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen80"
+            android:layout_marginBottom="@dimen/dimen10"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:paddingLeft="@dimen/dimen30"
+            android:paddingRight="@dimen/dimen30">
+
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dimen2"
+                android:layout_marginRight="@dimen/dimen30"
+                android:layout_marginBottom="@dimen/dimen2"
+                android:layout_weight="1"
+                android:background="@drawable/shape_downbg">
+
+                <EditText
+                    android:id="@+id/etKeyword"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen67"
+                    android:background="@null"
+                    android:drawableStart="@mipmap/ic_main_search_gray"
+                    android:drawablePadding="@dimen/dimen42"
+                    android:hint="请输入关键字"
+                    android:minHeight="@dimen/dimen42"
+                    android:paddingStart="@dimen/dimen24"
+                    android:paddingEnd="@dimen/dimen24"
+                    android:singleLine="true"
+                    android:textColor="@color/c63"
+                    android:textColorHint="@color/c69"
+                    android:textSize="@dimen/dimen_text28" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tvSearch"
+                android:layout_width="@dimen/dimen100"
+                android:layout_height="@dimen/dimen70"
+                android:background="@drawable/shape_searchbuttonbg"
+                android:gravity="center"
+                android:text="搜索"
+                android:textColor="@color/cffffff" />
+        </LinearLayout>
+
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/refreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:descendantFocusability="blocksDescendants"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rcv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:nestedScrollingEnabled="false"
+                    android:orientation="vertical"
+                    android:overScrollMode="never"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+                <LinearLayout
+                    android:id="@+id/llNodata"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="@dimen/dimen150"
+                        android:layout_height="@dimen/dimen150"
+                        android:src="@mipmap/nodata" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen40"
+                        android:text="暂无数据"
+                        android:textColor="@color/c63" />
+                </LinearLayout>
+            </RelativeLayout>
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

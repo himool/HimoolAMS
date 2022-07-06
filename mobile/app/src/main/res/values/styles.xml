@@ -1,0 +1,60 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+<!--        <item name="colorPrimary">@android:color/black</item>-->
+<!--        <item name="colorPrimaryDark">@android:color/black</item>-->
+        <item name="colorAccent">@color/colorMain</item>
+        <item name="android:windowIsTranslucent">true</item>//保证背景透明
+    </style>
+
+    <!--状态栏、导航栏全透明，此属性需要结合 activity 里设置 setSystemUiVisibility() 方法使用才有效-->
+
+    <style name="dialog_style" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:background">@color/transparent</item>
+        <!-- 整个window是不是透明黑色 -->
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+
+    <!-- Toolbar -->
+    <style name="ToolbarTheme" parent="AppTheme">
+        <!--<item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/color_text_gray</item>-->
+        <!--返回或更多(app:showAsAction="never")的系统按钮颜色-->
+        <item name="colorControlNormal">@android:color/black</item>
+        <!--菜单字体颜色-->
+        <item name="actionMenuTextColor">@color/color_text_gray</item>
+    </style>
+
+
+    <!--溢出菜单样式-->
+
+
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!--边框-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">true</item>
+        <!--半透明-->
+        <item name="android:windowNoTitle">true</item>
+        <!--无标题-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--背景透明-->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!--透明背景-->
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+</resources>

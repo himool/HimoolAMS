@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar_title_commit" />
+        <LinearLayout
+            android:id="@+id/llLoc"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen80"
+            android:layout_marginBottom="@dimen/dimen20"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dimen30"
+            android:paddingRight="@dimen/dimen30">
+
+            <TextView
+                android:layout_width="@dimen/dimen150"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="位置选择"
+                android:textColor="@color/c63"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvLoc"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/dimen40"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center_vertical|right"
+                android:imeOptions="actionNext"
+                android:paddingStart="@dimen/dimen24"
+                android:paddingEnd="@dimen/dimen24"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/c64"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="@dimen/dimen67"
+                android:layout_height="@dimen/dimen67"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/gray_right" />
+        </LinearLayout>
+        <include layout="@layout/include_line"/>
+        <LinearLayout
+            android:id="@+id/llAddress"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen80"
+            android:layout_marginBottom="@dimen/dimen20"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dimen30"
+            android:paddingRight="@dimen/dimen30">
+
+            <TextView
+                android:layout_width="@dimen/dimen150"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="地点选择"
+                android:textColor="@color/c63"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvCustF"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/dimen40"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center_vertical|right"
+                android:imeOptions="actionNext"
+                android:paddingStart="@dimen/dimen24"
+                android:paddingEnd="@dimen/dimen24"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/c64"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="@dimen/dimen67"
+                android:layout_height="@dimen/dimen67"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/gray_right" />
+        </LinearLayout>
+        <include layout="@layout/include_line"/>
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/refreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:descendantFocusability="blocksDescendants"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rcv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:nestedScrollingEnabled="false"
+                    android:orientation="vertical"
+                    android:overScrollMode="never"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+                <LinearLayout
+                    android:id="@+id/llNodata"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="@dimen/dimen150"
+                        android:layout_height="@dimen/dimen150"
+                        android:src="@mipmap/nodata" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen40"
+                        android:text="暂无数据"
+                        android:textColor="@color/c63" />
+                </LinearLayout>
+            </RelativeLayout>
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+          >
+
+            <TextView
+                android:id="@+id/tvPan"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/scancommitbg"
+                android:gravity="center"
+                android:text="开始盘点"
+                android:textColor="#ffffffff"
+                android:textSize="17sp" />
+
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+</FrameLayout>

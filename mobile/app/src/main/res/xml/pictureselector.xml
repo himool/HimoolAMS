@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <paths>
+        <external-path name="beta_external_path" path="PictureSelector/"/>
+        <external-path name="name" path="rubbish/" />
+        <external-path name="external_files" path="."/>
+<!--        <external-path name="download" path="" />-->
+        <!-- 这个下载路径也不可以修改，必须为GDTDOWNLOAD -->
+        <external-path name="gdt_sdk_download_path" path="GDTDOWNLOAD" />
+    </paths>
+</resources>
