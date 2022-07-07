@@ -34,7 +34,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="58dp"
                     android:gravity="center"
-                    android:text="欢迎登录\n学校资产管理平台"
+                    android:text="欢迎登录\n资产管理系统"
                     android:textColor="#ffffffff"
                     android:textSize="22sp" />
             </LinearLayout>

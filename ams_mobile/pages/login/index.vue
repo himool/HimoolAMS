@@ -5,7 +5,7 @@
     </view> -->
     
     <view style="color: rgb(24, 144, 255); padding-top: 280rpx;">
-      <view style="font-size: 52rpx; font-weight: 800;">资产管理平台</view>
+      <view style="font-size: 52rpx; font-weight: 800;">资产管理系统</view>
 <!--      <view style="font-size: 30rpx;">AMS标准版</view>
  -->    </view>
 
