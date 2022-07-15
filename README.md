@@ -24,3 +24,26 @@
 * 数据库为MySQL
 * 前端组件为AntD
 * 其他Python包可参考requirements.txt文件
+
+### 搭建运行环境
+* pip install -r requirements.txt
+* cd frontend  #进入frontend文件夹
+* npm install -g @vue/cli  #安装vue脚手架
+* npm install  #安装依赖包
+
+### 本地运行
+1. 启动后端服务
+    python manage.py runserver
+2. 启动前端服务
+    npm run serve
+3. 浏览器访问前端地址
+
+### PDA界面截图
+![PDA RFID盘点界面](https://gitee.com/haioucloud/ams/raw/master/img/RFID%E7%9B%98%E7%82%B9.JPG)
+
+### PC界面截图
+![基础数据](https://gitee.com/haioucloud/ams/raw/master/img/%E5%9F%BA%E7%A1%80%E6%95%B0%E6%8D%AE.JPG)
+![资产管理](https://gitee.com/haioucloud/ams/raw/master/img/%E8%B5%84%E4%BA%A7%E7%AE%A1%E7%90%86.JPG)
+![统计报表](https://gitee.com/haioucloud/ams/raw/master/img/%E7%BB%9F%E8%AE%A1%E6%8A%A5%E8%A1%A8.JPG)
+![记录查询](https://gitee.com/haioucloud/ams/raw/master/img/%E8%AE%B0%E5%BD%95%E6%9F%A5%E8%AF%A2.JPG)
+
