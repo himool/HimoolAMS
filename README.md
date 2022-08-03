@@ -4,7 +4,7 @@
 盒木科技([官网地址](https://www.haioucloud.com/home))专注于仓储物流和生产制造行业数字化系统的研发和实施。海鸥云是盒木科技自主研发的软件产品系列,目前已发布海鸥云仓库管理系统WMS，仓库控制系统WCS,生产执行系统MES，进销存ERP及资产管理系统。欢迎合作伙伴，代理商或者客户微信扫描下方客户经理二维码或电话18761717855体验咨询。<br /><br />
 ![微信](https://gitee.com/haioucloud/erp/raw/master/img/%E5%BE%AE%E4%BF%A1.png)
 
-#### 介绍
+#### 项目介绍
 开源资产管理系统，采用前后端分离技术，api使用restful协议，方便二次开发，后端使用Python，Django，DRF等技术，前端代码使用AntD进行构建，包含资产领用，退库，借用，归还，调拨，维修等流程。移动端使用Uniapp，包含RFID资产盘点等功能。
 * Gitee地址: [Gitee](https://gitee.com/haioucloud/ams)
 * Demo地址: [Demo](http://114.218.158.78:14448/) &nbsp;&nbsp;公司编号: admin  测试帐号：admin  密码：admin
