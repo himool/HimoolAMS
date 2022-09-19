@@ -5,8 +5,8 @@
         <div style="text-align: center; padding-top: 16px">
           <img :src="logo" width="140" style="margin-top: -6px; margin-left: 8px; cursor: pointer" @click="backIndex" />
         </div>
-        <div class="title" style="margin: 0">
-          <span style="cursor: pointer" @click="backIndex">海鸥云</span>
+        <div class="title" style="margin: 8px">
+          <span style="cursor: pointer; font-size: 24px" @click="backIndex">Himool AMS</span>
         </div>
         <div style="text-align: center; font-size: 16px; color: #1890ff; margin-bottom: 24px">
           资产管理系统
