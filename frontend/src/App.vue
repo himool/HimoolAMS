@@ -78,7 +78,7 @@ export default {
     setHtmlTitle() {
       const route = this.$route
       const key = route.path === '/' ? 'home.name' : getI18nKey(route.matched[route.matched.length - 1].path)
-      document.title = '资产管理系统' + ' | ' + this.$t(key)
+      document.title = 'Himool 资产管理系统' + ' | ' + this.$t(key)
     },
     popContainer() {
       return document.getElementById("popContainer")
