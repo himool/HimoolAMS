@@ -2,7 +2,7 @@
   <a-layout-sider :theme="sideTheme" :class="['side-menu', 'beauty-scroll', isMobile ? null : 'shadow']" width="256px" :collapsible="collapsible" v-model="collapsed" :trigger="null">
     <div :class="['logo', theme]">
       <router-link to="/">
-        <img src="@/assets/logo.png" style="height: 40px; width: 40px">
+        <img src="@/assets/logo.png" style="height: 36px; width: 36px">
         <h1>{{systemName}}</h1>
       </router-link>
     </div>

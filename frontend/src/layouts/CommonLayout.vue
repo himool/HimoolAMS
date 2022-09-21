@@ -1,7 +1,7 @@
 <template>
   <div class="background" ref="card">
     <a-card class="card">
-      <div>
+      <!-- <div>
         <div style="text-align: center; padding-top: 16px">
           <img :src="logo" width="140" style="margin-top: -6px; margin-left: 8px; cursor: pointer" @click="backIndex" />
         </div>
@@ -10,6 +10,18 @@
         </div>
         <div style="text-align: center; font-size: 16px; color: #1890ff; margin-bottom: 24px">
           资产管理系统
+        </div>
+      </div> -->
+
+      <div>
+        <div style="text-align: center; padding-top: 16px">
+          <img :src="logo" width="100" style="cursor: pointer; margin-top: 16px" @click="backIndex" />
+        </div>
+        <div class="title" style="margin-top: 16px">
+          <span style="cursor: pointer; font-size: 24px" @click="backIndex">Himool AMS</span>
+        </div>
+        <div style="text-align: center; font-size: 16px; color: #1890ff; margin-top: 8px; margin-bottom: 24px">
+          <span>资产管理系统</span>
         </div>
       </div>
       <slot></slot>
